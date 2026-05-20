@@ -1,0 +1,155 @@
+/* =========================
+   VARIABLES
+========================= */
+$pink-main: #f48fb1;
+$pink-dark: #ec407a;
+$pink-soft: #fde4ec;
+$dark-text: #4a4a4a;
+$white: #ffffff;
+
+/* =========================
+   GLOBAL
+========================= */
+body {
+  background: linear-gradient($pink-soft, $white);
+  font-family: 'Segoe UI', sans-serif;
+  color: $dark-text;
+}
+
+section {
+  padding: 60px 0;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  background-color: $pink-dark;
+
+  .navbar-brand {
+    font-weight: bold;
+    color: $white;
+  }
+
+  .nav-link {
+    color: $white;
+    margin-left: 10px;
+
+    &:hover {
+      color: $pink-soft;
+    }
+  }
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+  position: relative;
+  height: 180px;
+  color: $white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(236, 64, 122, 0.55);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+
+    h1 {
+      font-weight: bold;
+    }
+
+    .btn-coffee {
+      background-color: $pink-main;
+
+      &:hover {
+        background-color: $pink-dark;
+      }
+    }
+  }
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+#about {
+  background-color: $pink-soft;
+
+  h2 {
+    color: $pink-dark;
+  }
+
+  img {
+    border-radius: 20px;
+  }
+}
+
+/* =========================
+   CARD / PRODUK
+========================= */
+.card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  h5 {
+    color: $pink-dark;
+    font-weight: bold;
+  }
+
+  .price {
+    color: $pink-main;
+    font-weight: bold;
+  }
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn-coffee {
+  background-color: $pink-main;
+  color: $white;
+  border-radius: 25px;
+
+  &:hover {
+    background-color: $pink-dark;
+    color: $white;
+  }
+}
+
+/* =========================
+   FORM
+========================= */
+form {
+  background-color: $white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+  label {
+    font-weight: 600;
+    color: $pink-dark;
+  }
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background-color: $pink-dark;
+  color: $white;
+
+  p {
+    margin: 0;
+  }
+}

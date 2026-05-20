@@ -1,0 +1,135 @@
+/* =========================
+   VARIABLES
+========================= */
+/* =========================
+   GLOBAL
+========================= */
+body {
+  background: linear-gradient(#fde4ec, #ffffff);
+  font-family: "Segoe UI", sans-serif;
+  color: #4a4a4a;
+}
+
+section {
+  padding: 60px 0;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  background-color: #ec407a;
+}
+.navbar .navbar-brand {
+  font-weight: bold;
+  color: #ffffff;
+}
+.navbar .nav-link {
+  color: #ffffff;
+  margin-left: 10px;
+}
+.navbar .nav-link:hover {
+  color: #fde4ec;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+  position: relative;
+  height: 80vh;
+  color: #ffffff;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(236, 64, 122, 0.55);
+}
+.hero .hero-content {
+  position: relative;
+  z-index: 1;
+}
+.hero .hero-content h1 {
+  font-weight: bold;
+}
+.hero .hero-content .btn-coffee {
+  background-color: #f48fb1;
+}
+.hero .hero-content .btn-coffee:hover {
+  background-color: #ec407a;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+#about {
+  background-color: #fde4ec;
+}
+#about h2 {
+  color: #ec407a;
+}
+#about img {
+  border-radius: 20px;
+}
+
+/* =========================
+   CARD / PRODUK
+========================= */
+.card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.card h5 {
+  color: #ec407a;
+  font-weight: bold;
+}
+.card .price {
+  color: #f48fb1;
+  font-weight: bold;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn-coffee {
+  background-color: #f48fb1;
+  color: #ffffff;
+  border-radius: 25px;
+}
+.btn-coffee:hover {
+  background-color: #ec407a;
+  color: #ffffff;
+}
+
+/* =========================
+   FORM
+========================= */
+form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+form label {
+  font-weight: 600;
+  color: #ec407a;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background-color: #ec407a;
+  color: #ffffff;
+}
+footer p {
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
